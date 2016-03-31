@@ -8,9 +8,9 @@ var Move_Down_Stat = 0
 var Move_Left_Stat = 0
 var Move_Right_Stat = 0
 
-var Turn_amount = 1
+var Turn_amount = 0
 var Turn_Number = 0
-
+var meep = 1
 
 func _ready():
 	set_process(true)
