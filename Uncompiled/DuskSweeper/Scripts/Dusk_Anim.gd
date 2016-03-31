@@ -16,8 +16,13 @@ func _ready():
 	
 func _process(delta):
 	##Repeated Variables
-	Char_anim_player = get_node("Char/AnimationPlayer")
+	Char_anim_player = get_node("Char_Body/Char/AnimationPlayer")
 	Selected_anim_player = get_node("Selected/AnimationPlayer")
+	var Kitty = self
+	var Arrow_Up = get_node("Arrow_Up")
+	var Arrow_Down = get_node("Arrow_Down")
+	var Arrow_Left = get_node("Arrow_Left")
+	var Arrow_Right = get_node("Arrow_Right")
 	
 	if Selected != Selected_new:  ##Keeps Animation Playing without Needing to restart on first frame
 		Selected_new = Selected  
@@ -26,6 +31,39 @@ func _process(delta):
 	if Char != Char_new:
 		Char_new = Char
 		Char_anim_player.play(Char)
+	
+	
+	##Find and Remove arrow when needed
+	if Kitty.get_pos().y == 32:
+		Arrow_Up.hide()
+		Globals.set("Up_Stat", 0)
+	else:
+		Arrow_Up.show()
+		Globals.set("Up_Stat", 1)
+		
+	if Kitty.get_pos().x == 32:
+		Arrow_Left.hide()
+		Globals.set("Left_Stat", 0)
+	else:
+		Arrow_Left.show()
+		Globals.set("Left_Stat", 1)
+		
+	if Kitty.get_pos().x == 256:
+		Arrow_Right.hide()
+		Globals.set("Right_Stat", 0)
+	else:
+		Arrow_Right.show()
+		Globals.set("Right_Stat", 1)
+		
+	if Kitty.get_pos().y == 256:
+		Arrow_Down.hide()
+		Globals.set("Down_Stat", 0)
+	else:
+		Arrow_Down.show()
+		Globals.set("Down_Stat", 1)
+	
+
+	
 	
 	
 	
