@@ -3,7 +3,7 @@ Duskitty's Amazing 2 Button Game Collection
 
 
 
---Saturday 26th, March of 2016--
+### --Saturday 26th, March of 2016--
 
 "Dusk and the Infinity Hole" - ﻿Started
 
@@ -15,7 +15,7 @@ Duskitty's Amazing 2 Button Game Collection
 
 
 
---Wednesday 30th, March of 2016--
+### --Wednesday 30th, March of 2016--
 
 "Dusk and the Infinity Hole" - Added Moving Blocks 
 
@@ -32,7 +32,7 @@ Duskitty's Amazing 2 Button Game Collection
 
 
 
---Thursday 31st, March of 2016--
+### --Thursday 31st, March of 2016--
 
 "Dusk and the Infinity Hole" - 	Put Project on Gamejolt
 
@@ -52,7 +52,7 @@ Duskitty's Amazing 2 Button Game Collection
 
 "Dusk and the Infinity Hole" -  Decided to Do black Outlines around sprites to Differenciate end points of sprites
 
-"Dusk and the Infinity Hole" -  Made And Added Fonts to project folder and Made font test
+- "Dusk and the Infinity Hole" -  Made And Added Fonts to project folder and Made font test
 
 
 
