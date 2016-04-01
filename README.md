@@ -20,12 +20,6 @@ Duskitty's Amazing 2 Button Game Collection
 
 ### --Thursday 31st, March of 2016--
 
-- "Dusk and the Infinity Hole" -  Project on Gamejolt
-- "Dusk and the Infinity Hole" -  Made Banners/Thumbnails for Gamejolt
-- "Dusk and the Infinity Hole" -  Added Arrow Shown Movement to Show where you can Move
-- "Dusk and the Infinity Hole" -  Started Base of Movement Functionallity
-- "Dusk and the Infinity Hole" - ﻿ Thursday 31st, March of 2016 - Put Project on Gamejolt
-- "Dusk and the Infinity Hole" -  Made Banners/Thumbnails for Gamejolt
 - "Dusk and the Infinity Hole" -  Added Arrow Shown Movement to Show where you can Move
 - "Dusk and the Infinity Hole" -  Started Base of Movement Functionallity
 - "Dusk and the Infinity Hole" -  Decided to Do black Outlines around sprites to Differenciate end points of sprites
