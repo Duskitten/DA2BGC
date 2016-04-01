@@ -25,8 +25,10 @@ Duskitty's Amazing 2 Button Game Collection
 - "Dusk and the Infinity Hole" -  Decided to Do black Outlines around sprites to Differenciate end points of sprites
 - "Dusk and the Infinity Hole" -  Made And Added Fonts to project folder and Made font test
 
+### --Friday 1st, April of 2016--
 
-
+- "Dusk and the Infinity Hole" -  Added Gridbased Movement To Seem like Arcade game/Turnbased Game 
+- (Note to self: Need to add Turns Counter)
 
 
 

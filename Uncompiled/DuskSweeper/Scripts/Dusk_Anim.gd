@@ -9,13 +9,18 @@ var Char_anim_player = null
 var Char = ""
 var Char_new = ""
 
+
 func _ready():
 	set_process(true)  ## Sets Loop On
-	
+	Globals.set("Is_moving", false)
 	
 	
 func _process(delta):
 	##Repeated Variables
+	var moving = Globals.get("Is_moving")
+	var selectedBox = get_node("Selected")
+	
+	
 	Char_anim_player = get_node("Char_Body/Char/AnimationPlayer")
 	Selected_anim_player = get_node("Selected/AnimationPlayer")
 	var Kitty = self
@@ -34,41 +39,45 @@ func _process(delta):
 	
 	
 	##Find and Remove arrow when needed
-	if Kitty.get_pos().y == 32:
-		Arrow_Up.hide()
-		Globals.set("Up_Stat", 0)
-	else:
-		Arrow_Up.show()
-		Globals.set("Up_Stat", 1)
+	if moving == false:
+		if Kitty.get_pos().y == 32:
+			Arrow_Up.hide()
+			Globals.set("Up_Stat", 0)
+		else:
+			Arrow_Up.show()
+			Globals.set("Up_Stat", 1)
 		
-	if Kitty.get_pos().x == 32:
-		Arrow_Left.hide()
-		Globals.set("Left_Stat", 0)
-	else:
-		Arrow_Left.show()
-		Globals.set("Left_Stat", 1)
+		if Kitty.get_pos().x == 32:
+			Arrow_Left.hide()
+			Globals.set("Left_Stat", 0)
+		else:
+			Arrow_Left.show()
+			Globals.set("Left_Stat", 1)
 		
-	if Kitty.get_pos().x == 256:
-		Arrow_Right.hide()
-		Globals.set("Right_Stat", 0)
-	else:
-		Arrow_Right.show()
-		Globals.set("Right_Stat", 1)
+		if Kitty.get_pos().x == 256:
+			Arrow_Right.hide()
+			Globals.set("Right_Stat", 0)
+		else:
+			Arrow_Right.show()
+			Globals.set("Right_Stat", 1)
 		
-	if Kitty.get_pos().y == 256:
+		if Kitty.get_pos().y == 256:
+			Arrow_Down.hide()
+			Globals.set("Down_Stat", 0)
+		else:
+			Arrow_Down.show()
+			Globals.set("Down_Stat", 1)
+	elif moving == true: 
 		Arrow_Down.hide()
-		Globals.set("Down_Stat", 0)
-	else:
-		Arrow_Down.show()
-		Globals.set("Down_Stat", 1)
-	
-
-	
+		Arrow_Left.hide()
+		Arrow_Right.hide()
+		Arrow_Up.hide()
+		selectedBox.hide()
 	
 	
 	
 	##Constants
 	Selected = "Sq_spread"
-	Char = "Idle"
+	Char = "Move_Left"
 	
 
