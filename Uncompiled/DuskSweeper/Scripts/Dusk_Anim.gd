@@ -6,17 +6,18 @@ var Selected = ""
 var Selected_new = ""
 
 var Char_anim_player = null
-var Char = ""
+
 var Char_new = ""
 
 
 func _ready():
 	set_process(true)  ## Sets Loop On
 	Globals.set("Is_moving", false)
-	
+	Globals.set("Dusk_Anim", "Idle")
 	
 func _process(delta):
 	##Repeated Variables
+	var Char = Globals.get("Dusk_Anim")
 	var moving = Globals.get("Is_moving")
 	var selectedBox = get_node("Selected")
 	
@@ -78,6 +79,5 @@ func _process(delta):
 	
 	##Constants
 	Selected = "Sq_spread"
-	Char = "Move_Left"
 	
 

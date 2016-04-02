@@ -30,6 +30,11 @@ Duskitty's Amazing 2 Button Game Collection
 - "Dusk and the Infinity Hole" -  Added Gridbased Movement To Seem like Arcade game/Turnbased Game 
 - (Note to self: Need to add Turns Counter)
 
+### --Saturday 2nd, April of 2016--
 
+- "Dusk and the Infinity Hole" -  Added Side Panel
+- "Dusk and the Infinity Hole" -  Added Scores/Lives/Turns
+- "Dusk and the Infinity Hole" -  Began work on Enemy Turn AI
+- "Dusk and the Infinity Hole" -  Began Work on Switchable turns That can Run out
 
 
